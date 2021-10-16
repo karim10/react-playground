@@ -10,7 +10,7 @@ export const Header = styled.div`
 `;
 
 export const Footer = styled.div`
-  height: 100px;
+  height: 50px;
   width: 100%;
   background-color: green;
 `;

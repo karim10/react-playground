@@ -1,10 +1,12 @@
 import React from "react";
-import "./App.css";
 import { ThemeProvider, createTheme } from "@mui/material";
 import { Layout } from "./components/Layout";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import { HomePage } from "./pages/Home";
 import { FormPage } from "./pages/Form";
+
+import "./App.css";
+import "antd/dist/antd.css";
 
 function App() {
   const theme = createTheme({
