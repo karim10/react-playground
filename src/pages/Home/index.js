@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ImagesCarousel } from "../../components/ImagesCarousel";
+import { HouseCard } from "../../components/HouseCard";
 import { houses } from "../../data";
 
 const houses_data = [];
@@ -11,7 +11,7 @@ export function HomePage() {
   return (
     <HomeContainer>
       {houses.map((house) => (
-        <ImagesCarousel house={house} key={house.id} />
+        <HouseCard house={house} key={house.id} />
       ))}
     </HomeContainer>
   );
@@ -21,4 +21,5 @@ const HomeContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 `;

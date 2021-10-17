@@ -12,16 +12,16 @@ export function HeaderNav() {
   };
 
   return (
-    <div style={{ paddingRight: "20px" }}>
+    <>
       <Tabs
         value={value}
         onChange={handleChange}
         aria-label="basic tabs example"
       >
         <Tab label="Home" {...a11yProps(0)} value="/home" />
-        <Tab label="Form" {...a11yProps(1)} value="/form" />
+        <Tab label="Form" {...a11yProps(1)} value="/add-house" />
       </Tabs>
-    </div>
+    </>
   );
 }
 
